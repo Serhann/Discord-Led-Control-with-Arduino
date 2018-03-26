@@ -16,12 +16,12 @@ board.on('ready', async () => {
             if (!ledBool) {
                 msg.delete()
                 await led.on()
-                msg.reply('Led on.').then(mesaj => mesaj.delete(1000))
+                msg.reply('Led on.').then(message => mesaj.delete(1000))
                 ledBool = true;
             } else {
                 msg.delete()
                 await led.off()
-                msg.reply('Led off.').then(mesaj => mesaj.delete(1000))
+                msg.reply('Led off.').then(message => mesaj.delete(1000))
                 ledBool = false;
             }
         }
